@@ -7,8 +7,9 @@ import sys
 
 BASE_URL = "http://localhost:8000"  # Backend endpoint
 
+#title
 st.set_page_config(
-    page_title="🌍 Travel Planner Agentic Application",
+    page_title=" Travel Planner Agentic Application",
     page_icon="🌍",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -17,6 +18,7 @@ st.set_page_config(
 st.title("🌍 Travel Planner Agentic Application")
 
 # Initialize chat history
+#state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
