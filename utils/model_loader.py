@@ -1,5 +1,3 @@
-
-
 import os
 from dotenv import load_dotenv
 from typing import Literal, Optional, Any
@@ -9,15 +7,13 @@ from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 
 
-class Configloader:
-   
+class ConfigLoader:
     def __init__(self):
         print(f"Loaded config.....")
         self.config = load_config()
     
     def __getitem__(self, key):
         return self.config[key]
-
 
 class ModelLoader(BaseModel):
     model_provider: Literal["groq", "openai"] = "groq"
